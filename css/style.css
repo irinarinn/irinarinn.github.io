@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+html,
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* < 576px => 100% */
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    min-height: 100vh;
+    border: 1px solid #000;
+}
+
+/* 540px */
+@media (min-width: 576px) {
+    .section {
+        grid-template-columns: 1fr 540px 1fr;
+    }
+
+    .container,
+    .navbar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/* 720px */
+@media (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 720px 1fr;
+    }
+}
+
+/* 960px */
+@media (min-width: 992px) {
+    .section {
+        grid-template-columns: 1fr 960px 1fr;
+    }
+}
+
+/* 1140px */
+@media (min-width: 1200px) {
+    .section {
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+}
+
+.section {
+    background-color: aliceblue;
+}
+
+.home.section {
+    background-color: aquamarine;
+}
+
+.home.section .container {}
+
+.about.section {
+    background-color: antiquewhite;
+}
+
+.portfolio.section {}
+
+.contacts.section {}
+
+.contact .container a {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    
+    width: 13em;
+    height: 13em;
+    
+    background-color: red;
+    border-radius: 100%;
+    
+    text-decoration:  none;
+}
+.contacts .container a i {
+    font-size: 5em;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar .navmenu,
+.navbar .navmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navmenu a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+.navbar .navmenu a.active, 
+.navbar .navmenu a:hover {
+   color: red;
+   background-color: rgba(255,255,255, 0.8);
+}
