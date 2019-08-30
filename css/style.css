@@ -497,9 +497,9 @@ body > .section:nth-child(5n) {
 
 .form {
     background: rgba(186, 176, 173, 0.7);
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -510,14 +510,14 @@ label, input, textarea{
   width:100%;
   padding-left:15px;
   padding-bottom:10px;
-  padding-top:10px;
+  padding-top: 10px;
+}
+.form {
+    width: 600px;
+    height: 580px;
 }
 
-
-
-label, input {
-  height:50px;
-}
+ 
 
 
 label {
@@ -534,8 +534,10 @@ label.focus{
 }
 
 input, textarea{
+    margin: 4px;
   border:0 none;
     white-space: pre;
+    height:40px;
   border-bottom:1px solid white;
   color: white;
   font-size:16px;
@@ -561,7 +563,8 @@ input.submit {
   font-family: 'Raleway', sans-serif;
   font-size:18px;
   color: white;
-  width:18%;
+  width:20%;
+
   margin:20px auto;
   border: 1px solid white;
   height:initial;
