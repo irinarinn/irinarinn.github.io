@@ -343,11 +343,10 @@ body > .section:nth-child(5n) {
 
 .portfolio.section .container .gallerycont {
     position: absolute;
-    
     background-color: none;
-    margin-bottom: 55px;
+    margin-top: 75px;
     margin-left: 100px;
-    margin-top: -5px;
+    margin-top: ;
     
 }
 
@@ -380,22 +379,35 @@ body > .section:nth-child(5n) {
     height: 258px;
     box-sizing: border-box; 
     margin: 15px;
+    object-fit: cover;
+	transition: transform 400ms ease-out;
 }
 
+.Gallery:hover {
+	transform: scale(1.15);
+}
 .portfolio.section .featured-grid {
-
     position: absolute;
     display: grid;
     padding: 10px;
     list-style: none;
     grid-template-columns: 1.84210526316% 13.9473684211%  23.5964912281%  7.01754385965%  8.42105263158% 7.01754385965% 36.2280701754% 1.84210526316%;
-    grid-template-rows: 216px 216px 126px 118px 159px 218px 194px 238px 178px 166px 138px 177px 177px 238px 20px auto;
+    grid-template-rows: 216px 216px 126px 118px 159px 218px 194px 238px 178px 166px 138px 177px 220px 238px 20px auto;
     margin-top: 750px;
     
 }
 
+.featured-grid__item:hover {
+	transform: scale(1.15);
+}
 
+.featured-grid .featured-grid__item {
+    object-fit: cover;
+	transition: transform 400ms ease-out;
+    
+}
 .featured-grid .featured-grid__item img {
+    
     width: 100%;
 }
 
@@ -492,7 +504,7 @@ body > .section:nth-child(5n) {
 }
 
 label, input, textarea{
-
+    
   display:block;
   background:transparent;
   width:100%;
@@ -500,6 +512,8 @@ label, input, textarea{
   padding-bottom:10px;
   padding-top:10px;
 }
+
+
 
 label, input {
   height:50px;
@@ -552,6 +566,7 @@ input.submit {
   border: 1px solid white;
   height:initial;
   cursor:pointer;
+    letter-spacing: 0.3em;
   transition: background-color white 0.2s ease, border-color 0.2s ease;
 }
 input.submit:hover{
