@@ -239,7 +239,7 @@ body > .section:nth-child(2n) {
     background: url(../img/HeadBackground.jpg) no-repeat center top / cover;
 }
 body > .section:nth-child(3n) {
-    height: 750px;
+    height: 620px;
     background-color: none;
 }
 body > .section:nth-child(4n) {
