@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shepel</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
                 <nav>
                     <ul>
                         <li><a href="#home">ГОЛОВНА</a></li>
-                        <li><a href="#about">ПРО МЕНЕ</a></li>
+                        <li><a href="#about">ПРО&#160;МЕНЕ</a></li>
                         <li><a href="#portfolio">ПОРТФОЛІО</a></li>
                         <li><a href="#contacts">КОНТАКТИ</a></li>
                     </ul>
@@ -33,7 +34,7 @@
 
     <div class="section home" id="home">
         <div class="container">
-            <div class="logo"><img src="img/Logo.png"></div>
+            <div class="logoo"><img src="img/Logo.png"></div>
         
             <div class="photo"> <p>PHOTOGRAPHY &&#160;ILLUSTRATION </p> </div>
         
@@ -42,13 +43,13 @@
 
     <div class="section about" id="about">
         <div class="container">
-              <div class="square">
+              
                
                 <div class="one"> </div>
                 
                     <div class="Text1">
-                        <p> 
-                Привіт, мене звати Іра, мені 20 років.
+            
+           <p>      Привіт, мене звати Іра, мені 20 років.
                 Я навчаюся на третьому курсі Львівської 
                 Національної Академії Мистецтв, на кафедрі 
                 Графічного дизайну. 
@@ -66,7 +67,7 @@
                
                 
                 <img src='Face1.jpg' class="two">                </div>
-        </div>
+        
     </div>
 
     <div class="section portfolio" id="portfolio">
@@ -99,10 +100,17 @@
        <div class="section contacts" id="contacts">
        <div class="container">
        
+       
+       
+       
+       
+       
+       
+       
       
        
-<form class="form">
-   <!--<img src="img/Cont5Img2.jpg" class="Cont5Img2"> -->
+<!--<form class="form">
+   <img src="img/Cont5Img2.jpg" class="Cont5Img2">
    
   
   <div class="in">
@@ -126,18 +134,34 @@
   </div>
   <input type="Submit" class="submit" value="SEND">
 </div>
-</form>
+</form> -->
        </div>
-       
+        
     </div>
+   
 </body>
 
 
     <!-- JS -->
 
+   
+  
+   
+   
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/menuspy@1.3.0/dist/menuspy.min.js" integrity="sha256-nLsUsNbD5SyESe6GrfVY1ay1ThxDUl5FZPqwhFRCzxA=" crossorigin="anonymous"></script>
+      
+       <script>
+    $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+    </script>
+   
 
       <script>
         /* menu scroll spy */
@@ -188,7 +212,7 @@
 
     </script>
 
-<script>$(document).ready(function(){
+<!--<script>$(document).ready(function(){
   $('.form-element').focus(function(){
     $(this).siblings('label').addClass('focus');
   });
@@ -198,5 +222,4 @@
    }
   });
 });</script>
-
-
+-->
