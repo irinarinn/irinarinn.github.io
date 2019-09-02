@@ -31,8 +31,9 @@ header {
 .navbar ul,
 .navbar li {
     list-style: none;
-    margin: 0;
+    margin: ;
     padding: 0;
+    
     position: relative;
     width: 100%;
 }
@@ -49,7 +50,7 @@ header {
 
 .navbar .navbar-toggler {
     display: none;
-    --navbar-toggler-color: lightgrey;
+    --navbar-toggler-color: white;
 }
 
 .navbar-mobile .navbar-toggler {
@@ -127,10 +128,9 @@ header {
 
 /* налаштувати вигляд navbar для desktop */
 .navbar.scrolled {
-  background-color: rgba(186, 176, 173, 0.3); !important;
+  background-color: rgba(0, 0, 0, 0.2); !important;
   transition: background-color 200ms linear;
 }
-
 .navbar-desktop ul {
     display: flex;
     flex-direction: row;
@@ -152,7 +152,7 @@ header {
 .navbar-desktop ul .active a,
 .navbar-desktop ul a.active,
 .navbar-desktop ul a:hover {
-    background-color: rgba(186, 176, 173, 0.2);
+    color: black;
 }
 
 
@@ -203,7 +203,6 @@ html, *,  *:before, *:after {
 
 body {
     margin: 0;
-    min-height: 100vh;
 }
 
 /* < 576px => 100% */
@@ -270,8 +269,12 @@ body > .section:nth-child(4n) {
 }
 
 body > .section:nth-child(5n) {
-    background: none;
-    height: 800px;
+    background: url(../img/Cont5Img2.jpg) no-repeat center top / cover;
+    height: 500px;
+}
+
+#home {
+    display: grid;
 }
 
 .home.section .container {
@@ -304,25 +307,25 @@ body > .section:nth-child(5n) {
 }
 
 
+
+
 .about.section .container  {
     display: grid;
-    
+    position: relative;
     grid-template-columns: 4fr 8fr 3fr 9fr 3fr;
     grid-template-rows: 134px 89px 451px 96px;
 }
 
-.one .two .Text1 {
-    width: 100%;
-}
+
 
 .about.section .one {
-    
+   display: grid;
     width: 480px;
     height: 450px;
     grid-column: 2 / 4;
     grid-row-start: 2;
     grid-row-end: 4;
-    background: rgba(186, 176, 173, 0.7);
+
     z-index: 999;
     
 }
@@ -338,11 +341,12 @@ body > .section:nth-child(5n) {
 }
 
 .about.section .Text1  {
-    
+    position: relative;
+     display: grid;
+    background-color: rgb( 0, 0, 0, 0.3);
     grid-column: 2 / 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 4;
-    white-space: pre;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -351,7 +355,10 @@ body > .section:nth-child(5n) {
     letter-spacing: 0.01em;
     color: #FFFFFF;
     z-index: 3000;
-    margin-bottom: 40px;
+    padding: 40px;
+    margin: 50px;
+    margin-top: 80px;
+    width: 100%;
 
 }
 
@@ -481,3 +488,67 @@ body > .section:nth-child(5n) {
 
 
 .contacts.section .container 
+
+.contacts.section .container  {
+    display: grid;
+    position: relative;
+  text-align: center;
+    
+}
+
+.contacts.section .container h1 {
+  color: gray;
+  margin-top: 20vh;
+}
+
+.contacts.section .container h4 {
+  color: white;
+  font-size: .8em;
+}
+
+.contacts.section .container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: lightgray;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: lightgray;
+    
+}
+a, a:visited {
+  display: inline-block;
+  padding: .4em 1em;
+  text-decoration: none;
+  color: white;
+}
+a:hover, a:active {
+border-bottom: 1.5px solid white;
+}
+
+.reveal {
+  color: white;
+}

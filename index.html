@@ -2,16 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
     <title>Shepel</title>
-=======
-    <title>irinarin portfolio</title>
->>>>>>> cd5a2a36eb9da69602feef37fd57a504a2d298c9
-=======
-    <title>Web 1</title>
->>>>>>> parent of cd5a2a3... title and responsive
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
@@ -53,21 +45,21 @@
         <div class="container">
               
                
-                <div class="one"> </div>
+                
                 
                     <div class="Text1">
             
-           <p>      Привіт, мене звати Іра, мені 20 років.
+           <p>  Привіт, мене звати Іра, мені 20 років.
                 Я навчаюся на третьому курсі Львівської 
                 Національної Академії Мистецтв, на кафедрі 
                 Графічного дизайну. 
-                            
-                Обожнюю малювати портрети та
+                            <br>
+                  <br>Обожнюю малювати портрети та
                 фотографувати. У своїх роботах в основному 
-                використовую різні графічні техніки,але
+                використовую різні графічні техніки, але
                 найбільше люблю працювати з вугіллям.
-                            
-                Як на мене, завдяки йому можна найвдаліше 
+                           <br>
+                 <br>Як на мене, завдяки йому можна найвдаліше 
                 передати емоції та глибину портрету,
                 створюючи у своїй роботі особливо
                 заворожуючу атмосферу.</p>
@@ -108,7 +100,18 @@
        <div class="section contacts" id="contacts">
        <div class="container">
        
-       
+       <div id="nav_box">
+    <h4>Якщо вам сподобалися мої роботи, зв'яжіться зі мною</h4>
+    <div id="nav">
+        <ul>
+            <li id="email"><a href="mailto:lemonpunsch@gmail.com?subject=I%20think%20you%20are%20awesome">email</a></li><!--
+            --><li id="twitter"><a href="https://www.facebook.com/">facebook</a></li><!--
+            --><li id="website"><a href="https://www.instagram.com/i.rrin/">instagram</a></li>
+        </ul>
+    </div>
+    <h1><span id="jeff" class="name-part"></span><span id="at" class="name-part"></span><span id="jeffheppert"class="name-part"></span><span id="dotcom" class="name-part"></span></h1>
+    
+</div>
        
        
        
@@ -154,9 +157,6 @@
 
    
   
-   
-   
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/menuspy@1.3.0/dist/menuspy.min.js" integrity="sha256-nLsUsNbD5SyESe6GrfVY1ay1ThxDUl5FZPqwhFRCzxA=" crossorigin="anonymous"></script>
@@ -231,3 +231,27 @@
   });
 });</script>
 -->
+   
+<script>
+    $("#email").hover(
+  function(){
+    $(".name-part").addClass("reveal");
+  }, function(){
+    $(".name-part").removeClass("reveal");
+});
+
+$("#twitter").hover(
+  function(){
+    $("#at, #jeffheppert").addClass("reveal");
+  }, function(){
+    $(".name-part").removeClass("reveal");
+});
+
+$("#website").hover(
+  function(){
+    $("#jeffheppert, #dotcom").addClass("reveal");
+  }, function(){
+    $(".name-part").removeClass("reveal");
+});
+    </script>
+   
